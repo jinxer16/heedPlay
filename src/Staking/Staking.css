@@ -1,0 +1,359 @@
+.staking {
+  background-image: url("../media/demo-bg.jpeg") !important;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0f131b;
+  padding-top: 50px !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stakingTopbar {
+  background: rgba(11, 11, 61, 0.979) !important;
+  font-size: 14px;
+  line-height: 14px;
+  height: 40px;
+  padding: 0;
+  color: #fff;
+}
+
+.container-staking-outside {
+  border: 3px solid #2adeea;
+  position: relative !important;
+}
+
+.imgArea {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.stakingTop-image {
+  width: 400px;
+  height: 50px;
+}
+
+@media (max-width: 575.98px) {
+  .imgArea {
+    padding-top: 10px;
+    top: 60px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .imgArea {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stakingTop-image {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+  }
+}
+
+.imgArea-text {
+  z-index: 99;
+  position: absolute;
+  color: #000;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.container-staking {
+  border: 3px double #2adeea;
+  border-style: dashed;
+  min-height: 100vh;
+}
+
+.btnAllReward,
+.btnStake {
+  width: 200px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btnStake {
+  background: #28aa73;
+  border: 1px solid #28aa73;
+  margin-right: 5px;
+}
+
+.btnAllReward {
+  background: #3bc2cb;
+  border: 1px solid #3bc2cb;
+}
+
+.balanceMag {
+  font-size: 20px;
+  color: #2adeea;
+}
+
+.textMyCrazy {
+  font-size: 32px;
+  color: #fff;
+  font-family: "Bowlby One";
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (max-width: 676.98px) {
+  .textMyCrazy {
+    font-size: 22px;
+  }
+}
+
+.card-img-top {
+  width: 290px;
+  height: 300px;
+}
+
+.card {
+  width: 290px;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.card-body {
+  background: #21353b;
+  border-bottom-left-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+}
+
+.card-title {
+  color: #4ffcb3;
+}
+
+.card-text,
+.card-sub-title,
+.card-Link {
+  color: #fff;
+}
+
+.card-Link {
+  text-decoration: none;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-buttons button {
+  margin-top: 5px;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+
+  background: #28aa73;
+  border: 1px solid #28aa73;
+  color: #fff;
+}
+
+.card_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_btn button {
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 125px;
+  height: 40px;
+  color: #fff;
+}
+
+.btn-stake {
+  background: #28aa73;
+  border: 1px solid #28aa73;
+}
+
+.btn-unstake {
+  background-color: #ff4e4e !important;
+  border: 1px solid #ff4e4e !important;
+}
+
+.rewardColor {
+  background-color: #00aa73 !important;
+  border: 1px solid #00aa73 !important;
+}
+
+.btn-breed {
+  background: #d5aa1b;
+  border: 1px solid #d5aa1b;
+}
+
+.btn-stakeing {
+  background: #28aa73;
+  border: 1px solid #28aa73;
+}
+
+.btn-reward {
+  background: #718991;
+  border: 1px solid #718991;
+}
+
+.btn-transfer {
+  background: #3bc2cb !important;
+  border: 1px solid #3bc2cb;
+}
+
+.btnConnectInPresale {
+  width: 200px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #fff;
+  background: #28aa73;
+  border: 1px solid #28aa73;
+  text-align: center;
+}
+
+.inputBox {
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  background: #000000;
+  border: 1px solid #405c65;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.stakingTo {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px !important;
+}
+
+@media (max-width: 575.98px) {
+  .imageAreaStaking {
+    padding-top: 0px !important;
+    top: 10px !important;
+  }
+
+  .stakingImage {
+    width: 260px;
+  }
+
+  .stakingText {
+    font-size: 16px !important;
+  }
+
+  .connectBtnInPresale {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .confirmAndLaterdiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputBox {
+    width: 280px;
+  }
+
+  .toText {
+    padding-left: 1% !important;
+  }
+}
+
+.toText {
+  padding-left: 15%;
+}
+
+.connectBtnInPresale {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.headerContainerStaking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 60px; */
+  background: rgba(11, 11, 61, 0.979);
+  color: #fff !important;
+  z-index: 999;
+}
+
+/* .navbarContainer {
+  background: rgba(11, 11, 61, 0.979) !important ;
+  position: relative;
+  height: 0px !important;
+  border: 2px solid red
+} */
+
+.goongyeLogo {
+  width: 100px;
+}
+
+@media (max-width: 575.98px) {
+  .goongyeLogo {
+    width: 150px;
+  }
+}
+
+/* .collapse.show {
+  background: rgba(15, 15, 52, 0.723);
+  z-index: 9999999 !important;
+}
+
+@media (max-width: 767.98px) {
+  .collapse.show {
+    background-color: #000;
+    margin-top: -40px;
+    z-index: 9999999 !important;
+  }
+} */
+
+.cardRewardBalance {
+  color: #2adeea;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.rewardDiv,
+.kingRewardDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  font-size: 16px;
+}
+
+.rewardDiv {
+  padding-bottom: 5px;
+}
+
+.rewardTitle {
+  color: #fff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.claimableDiv,
+.rewardInner {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
