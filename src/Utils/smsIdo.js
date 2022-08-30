@@ -1,5 +1,5 @@
 export const smsIdoContractAddress =
-  "0xb9969F83A715c4a76E85c0EdFe0130f214Ac1d30";
+  "0x2DfE5Ae952019847316c85fd88053AB7a4Ce4725";
 export const smsContractAbi = [{
   "inputs": [{
     "internalType": "contract IBEP20",
@@ -26,116 +26,6 @@ export const smsContractAbi = [{
     "type": "address"
   }],
   "name": "OwnershipTransferred",
-  "type": "event"
-}, {
-  "anonymous": false,
-  "inputs": [{
-    "indexed": true,
-    "internalType": "address",
-    "name": "T1",
-    "type": "address"
-  }, {
-    "indexed": true,
-    "internalType": "uint256",
-    "name": "t1",
-    "type": "uint256"
-  }],
-  "name": "Transaction1",
-  "type": "event"
-}, {
-  "anonymous": false,
-  "inputs": [{
-    "indexed": true,
-    "internalType": "address",
-    "name": "T2",
-    "type": "address"
-  }, {
-    "indexed": true,
-    "internalType": "uint256",
-    "name": "t2",
-    "type": "uint256"
-  }],
-  "name": "Transaction2",
-  "type": "event"
-}, {
-  "anonymous": false,
-  "inputs": [{
-    "indexed": true,
-    "internalType": "address",
-    "name": "T3",
-    "type": "address"
-  }, {
-    "indexed": true,
-    "internalType": "uint256",
-    "name": "t3",
-    "type": "uint256"
-  }],
-  "name": "Transaction3",
-  "type": "event"
-}, {
-  "anonymous": false,
-  "inputs": [{
-    "indexed": true,
-    "internalType": "address",
-    "name": "T4",
-    "type": "address"
-  }, {
-    "indexed": true,
-    "internalType": "uint256",
-    "name": "t4",
-    "type": "uint256"
-  }],
-  "name": "Transaction4",
-  "type": "event"
-}, {
-  "anonymous": false,
-  "inputs": [{
-    "indexed": true,
-    "internalType": "address",
-    "name": "from",
-    "type": "address"
-  }, {
-    "indexed": true,
-    "internalType": "address",
-    "name": "to",
-    "type": "address"
-  }, {
-    "indexed": false,
-    "internalType": "uint256",
-    "name": "value",
-    "type": "uint256"
-  }, {
-    "indexed": false,
-    "internalType": "uint256",
-    "name": "time",
-    "type": "uint256"
-  }],
-  "name": "TransferBUSD",
-  "type": "event"
-}, {
-  "anonymous": false,
-  "inputs": [{
-    "indexed": true,
-    "internalType": "address",
-    "name": "owner",
-    "type": "address"
-  }, {
-    "indexed": true,
-    "internalType": "address",
-    "name": "spender",
-    "type": "address"
-  }, {
-    "indexed": false,
-    "internalType": "uint256",
-    "name": "value",
-    "type": "uint256"
-  }, {
-    "indexed": false,
-    "internalType": "uint256",
-    "name": "time",
-    "type": "uint256"
-  }],
-  "name": "TransferHPG",
   "type": "event"
 }, {
   "inputs": [],
@@ -182,20 +72,6 @@ export const smsContractAbi = [{
   "stateMutability": "view",
   "type": "function"
 }, {
-  "inputs": [{
-    "internalType": "address",
-    "name": "referredBy",
-    "type": "address"
-  }, {
-    "internalType": "uint256",
-    "name": "_amount",
-    "type": "uint256"
-  }],
-  "name": "Refer",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
   "inputs": [],
   "name": "Time",
   "outputs": [{
@@ -212,20 +88,6 @@ export const smsContractAbi = [{
     "internalType": "address[]",
     "name": "",
     "type": "address[]"
-  }],
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "inputs": [{
-    "internalType": "address",
-    "name": "",
-    "type": "address"
-  }],
-  "name": "alladdress",
-  "outputs": [{
-    "internalType": "address",
-    "name": "",
-    "type": "address"
   }],
   "stateMutability": "view",
   "type": "function"
