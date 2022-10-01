@@ -32,6 +32,13 @@ h6 {
   font-family: "Bowlby One", sans-serif;
 }
 
+.sub-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 105%;
+  text-transform: uppercase;
+  color: #4ffcb3;
+}
 .back-to-top {
   position: fixed;
   visibility: hidden;

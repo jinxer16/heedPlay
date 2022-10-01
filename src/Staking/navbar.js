@@ -15,6 +15,7 @@ import { AiFillMediumCircle } from "react-icons/ai"
 import "./Staking.css";
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom'
+import Whitepaperone from "../documment/Whitepaper.pdf"
 export default function NavbarStaking({
   changeMain,
   changeStake,
@@ -129,14 +130,13 @@ export default function NavbarStaking({
               <Nav.Link href="#faq">
                 <HashLink to="/#faq">FAQ</HashLink>
               </Nav.Link>
-
+              <Nav.Link href="#faq">
+                <a href={Whitepaperone} target="_blank">Whitepaper</a>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           
         </Navbar>
-
-
-    
       </div>
     </>
   );

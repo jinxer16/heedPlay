@@ -17,10 +17,10 @@ import Crazy from "./media/preview.png";
 import Crazy1 from "./media/d4835e86370fddbf30a274dc4149d5cb.gif"
 import King from "./media/king-goongye.png";
 import Breed from "./media/breed.png";
-import PSSJ from "./media/team_1_bg.png";
-import Zoe from "./media/team_3_bg.png";
-import Sophia from "./media/team_5_bg.png";
-import Abbey from "./media/splash_2.png";
+import PSSJ from "./media/team_1_bg.jpeg";
+import Zoe from "./media/team_3_bg.jpeg";
+import Sophia from "./media/team_5_bg.jpeg";
+import Abbey from "./media/splash_2.jpeg";
 import NFT1 from "./media/golf.png";
 import NFT2 from "./media/grilgolf.png";
 import NFT3 from "./media/boxing.png";
@@ -33,6 +33,11 @@ import Scene3 from "./media/vbhbd.png";
 import Scene4 from "./media/vhfbvh.png";
 import MintImage from "./media/mint-img.png";
 import MintSmImage from "./media/mint-sm-img.png";
+import two from "./media/2.png"
+import three from "./media/3.png"
+import five from "./media/5.png"
+import one from "./media/1.png";
+import ten from "./media/10.png";
 import on from "./media/On.png";
 import off from "./media/Line31.png";
 import image1 from "./media/Vector3.png";
@@ -382,7 +387,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
   }, [array]);
   return (
     <div className="home" id="home" >
-     
+
 
       <section
         id="hero"
@@ -687,7 +692,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
           >
             <a
               // href=""
-              
+
               className="btn-nft-cta"
             >
               {t("nftCarousel.2")}
@@ -915,7 +920,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
                 <div>
                   {i18n.language == "en" ? (
                     <>
-                    Start first to third
+                      Start first to third
                       {/* {t("roadmap.parah2")} */}
                       <span className="blue ms-1"> pre-sale</span>
                     </>
@@ -1296,7 +1301,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             >
               <img src={PSSJ} alt="" />
               <h4 className="name pt-3" c>
-                SH. HAMMAD
+              Shuchang
               </h4>
               <span className="pos">{t("team.para2")}</span>
             </div>
@@ -1307,7 +1312,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             >
               <img src={Zoe} alt="" />
               <h4 className="name pt-3" c>
-                SH. MUAZ
+              Lixin
               </h4>
               <span className="pos">{t("team.para3")}</span>
             </div>
@@ -1318,7 +1323,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             >
               <img src={Sophia} alt="" />
               <h4 className="name pt-3" c>
-                MUHAMMAD BILAL
+              Junfeng
               </h4>
               <span className="pos">{t("team.para4")}</span>
             </div>
@@ -1329,7 +1334,7 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
             >
               <img src={Abbey} alt="" />
               <h4 className="name pt-3" c>
-                MOHD SUBTAIN
+              Haitao
               </h4>
               <span className="pos">{t("team.para5")}</span>
             </div>
@@ -1337,6 +1342,31 @@ const Home = ({ changeMain, changeStake, changePresale }) => {
         </div>
       </section>
 
+      <section id="Partners">
+        <div className="fluid-container  text-center">
+          <span className="sub-title">Partners Supported By</span>
+          <div className="row d-flex justify-content-center mt-5">
+            <div className="col-lg-2 mt-2">
+              <a href="" target="_blank"><img src={one} width="150px"/></a>
+              </div>
+              <div className="col-md-2 col-6 mt-3">
+              <a href="https://coinsniper.net/coin/39947" target="_blank"><img src={two} width="150px"/></a>
+              </div>
+              <div className="col-md-2 col-6 mt-3">
+              <a href="https://coinvote.cc/login" target="_blank"><img src={three} width="160px"/></a>
+              </div>
+              <div className="col-md-2 col-6 mt-3">
+              <a href="https://gemfinder.cc/gem/11392" target="_blank"><img src={five} width="160px"/></a>
+              </div>
+              <div className="col-md-2 col-6 mt-3">
+              <a href="https://foundico.com/" target="_blank"><img src={ten} width="120px"/></a>
+              </div>
+            
+          </div>
+
+        </div>
+
+      </section>
       <section id="faq">
         <div className="container">
           <div
