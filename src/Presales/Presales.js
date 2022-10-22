@@ -23,8 +23,6 @@ import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom'
 import { hpgTokenCOntractAbi, hpgTokenContractAddress } from "../Utils/hpgTokens";
 import Countdown from 'react-countdown';
-// const caver = new Caver(window.klaytn);
-// const webSupply = new Caver("https://public-node-api.klaytnapi.com/v1/cypress");
 const webSupply = new Web3("https://bsc-dataseed1.binance.org");
 export default function AppPresale({ changeStake }) {
   let acc = useSelector((state) => state.connect?.connection);
@@ -51,12 +49,11 @@ export default function AppPresale({ changeStake }) {
       setCount(count - 1);
     }
   };
-  const [startTime, setStartTime] = useState(Date.now())
+  const [startTime, setStartTime] = useState(1)
   const getTime = async () =>{
     try {
       const contractOf = new webSupply.eth.Contract(smsContractAbi, smsIdoContractAddress);
       const time = await contractOf.methods.Time().call();
-      console.log("time", time);
       setStartTime(time)
     } catch (error) {
       console.error("error whiel get time", error);
@@ -70,31 +67,7 @@ export default function AppPresale({ changeStake }) {
       // Render a completed state
       return <Completionist />;
     } else {
-      // Render a countdown
-      // return <span style={{color:"#4ffcb3"}}>{days}:DD-{hours}:HH-{minutes}:MM{seconds}:SS</span>;
       return (
-//         <div id="countdown">
-//   <div id='tiles'>
-//     <span>
-//         {days}
-//     </span>
-//     <span>
-//         {hours}
-//     </span>
-//     <span>
-//         {minutes}
-//     </span>
-//     <span>
-//         {seconds}
-//     </span>
-//   </div>
-//   <div className="labels">
-//     <li>Days</li>
-//     <li>Hours</li>
-//     <li>Mins</li>
-//     <li>Secs</li>
-//   </div>
-// </div>
 <div className="countdown">
      <div>
       <span className="number days">{days}</span>
@@ -417,16 +390,7 @@ export default function AppPresale({ changeStake }) {
               {/* </div> */}
             </div>
             <div className="col-lg-4 col-md-12 col-sm-11  d-flex flex-column   mintCard2 p-2 mt-3" >
-              {/* <div className="mintCard mintCard2 p-2" > */}
-                {/* <div className="tab-content mt-2" id="nav-tabContent" > */}
-                  {/* <div
-                    className="tab-pane fade show active"
-                    id="nav-home"
-                    role="tabpanel"
-                    aria-labelledby="nav-home-tab"
-                  > */}
-                    
-                    {/* <div className="  "> */}
+             
                     <div className="text-white mt-3">
                       <span className="textColor">Your Balance:</span>
                       </div>
@@ -453,7 +417,7 @@ export default function AppPresale({ changeStake }) {
                       <div className="mintTotal">
                         <div>
                           <span className="totalSpan ps-2">
-                            {t("presale.price")}
+                            Min Buying
                           </span>
                         </div>
                         <div>
@@ -463,6 +427,23 @@ export default function AppPresale({ changeStake }) {
                             {t("mint.KLAY")}
                           </span>
                         </div>
+                        
+                      </div>
+                      <br/>
+                      <div className="mintTotal">
+                        <div>
+                          <span className="totalSpan ps-2">
+                            {t("presale.price")}
+                          </span>
+                        </div>
+                        <div>
+                          <span className="KLAYspan pe-2">
+                            
+                            <span className="textColor me-1">0.10</span>
+                            {t("mint.KLAY")}
+                          </span>
+                        </div>
+                        
                       </div>
                       <div className="mt-5">
                         <hr className="solid hori"></hr>
