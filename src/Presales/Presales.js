@@ -174,7 +174,7 @@ export default function AppPresale({ changeStake }) {
         contractBal = web3.utils.fromWei(contractBal);
         contractBal = parseFloat(contractBal).toFixed(2);
         if(userEntered.length>0){
-          if(usersBusdBalance<=count){
+          if(usersBusdBalance>=count){
             let estimatedToken = count*11
               if(contractBal>estimatedToken){
                 if(flag == true){
