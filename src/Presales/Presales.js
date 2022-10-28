@@ -49,7 +49,7 @@ export default function AppPresale({ changeStake }) {
       setCount(count - 1);
     }
   };
-  const [startTime, setStartTime] = useState(1)
+  const [startTime, setStartTime] = useState(Date.now())
   const getTime = async () =>{
     try {
       const contractOf = new webSupply.eth.Contract(smsContractAbi, smsIdoContractAddress);
@@ -127,7 +127,6 @@ export default function AppPresale({ changeStake }) {
         userHpgBal = web3.utils.fromWei(userHpgBal);
         userHpgBal = parseFloat(userHpgBal).toFixed(2)
         setusersHPGdBalance(userHpgBal);
-
       }
     } catch (e) {
       console.log("error while getting Users balance", e);
@@ -175,7 +174,7 @@ export default function AppPresale({ changeStake }) {
         contractBal = web3.utils.fromWei(contractBal);
         contractBal = parseFloat(contractBal).toFixed(2);
         if(userEntered.length>0){
-          if(usersBusdBalance>=count){
+          if(usersBusdBalance<=count){
             let estimatedToken = count*11
               if(contractBal>estimatedToken){
                 if(flag == true){
