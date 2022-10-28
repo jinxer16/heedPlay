@@ -386,15 +386,18 @@ a{
 }
 .btnMinus,
 .btnPlus,
-.spanCount,
 .btnMax {
   background: transparent;
   border: none;
   padding: 5px 10px;
 }
+.spanCount{
+  text-align: center;
+  border: none;
+  outline: none;
+}
 .btnMinus,
-.btnPlus,
-.spanCount {
+.btnPlus{
   font-size: 20px;
   width: 3px;
   color: #fff;

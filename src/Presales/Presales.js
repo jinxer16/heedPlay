@@ -42,7 +42,7 @@ export default function AppPresale({ changeStake }) {
   const referralAddress = useRef();
   const dispatch = useDispatch();
   const handlePlus = () => {
-    setCount(count + 1);
+    setCount(+count + 1);
   };
   const handleMinus = () => {
     if (count > 10) {
@@ -485,7 +485,12 @@ export default function AppPresale({ changeStake }) {
                         >
                           -
                         </button>
-                        <span className="spanCount ">{count}</span>
+                        <input  value={count} className="spanCount" 
+                        onChange={(e)=>{
+                          setCount(e.target.value)
+                        }}
+                        />
+                        
                         <button
                           className="btnPlus btnPlusPresale"
                           onClick={handlePlus}
